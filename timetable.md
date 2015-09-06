@@ -95,6 +95,7 @@ CSS 优先级  了解兼容性   了解书写规则
 * 单位
  * 尺寸
  * 颜色
+
 #### 基础教程
 * 选择器
 * 语法
@@ -110,7 +111,7 @@ IE 下的CSS
 
  
 
-### 4 - CSS高级2：CSS3
+### 4 - CSS高级1：CSS3
 
 #### CSS 3属性
 * 边框
@@ -130,25 +131,25 @@ IE 下的CSS
 
 
 
-### 5 - CSS高级1：应用
+### 5 - CSS高级2：应用
 
-根据baidu EFE team CSS标准、bootstrap CSS标准书写样式
-样式重置
+根据baidu EFE team CSS标准、bootstrap CSS标准书写样式<br/>
+样式重置<br/>
 * 一般的样式重置
 * normalize.css重置
 
-绝对定位、相对定位：
-浮动：浮动详解、浮动的各种bug、如何清除浮动
-块和行内块元素：块和内嵌特点、块和内嵌转换、标签嵌套规范
+绝对定位、相对定位：<br/>
+浮动：浮动详解、浮动的各种bug、如何清除浮动<br/>
+块和行内块元素：块和内嵌特点、块和内嵌转换、标签嵌套规范<br/>
 
   
 
 ### 6 - CSS 高级3：兼容及拼图
 
-@import  @charset  hevaior(*.htc)
-overflow问题、Css Hack、条件注释语句
-兼容性问题总结
-CSS Hack
+@import  @charset  hevaior(*.htc)<br/>
+overflow问题、Css Hack、条件注释语句<br/>
+兼容性问题总结<br/>
+CSS Hack<br/>
 Css Sprit 详解 (精灵/雪碧)、拼图的技巧、Sprite样式写法、优缺点分析
 
 
@@ -159,10 +160,7 @@ Viewport、meta、媒体查询(Media Query)、媒体类型、响应式布局技�
 
 ### 8 - WEB 相关知识
 
-面试题
-答疑
-大量试题测试学员学习成果
-服务器  、http
+面试题、答疑、大量试题测试学员学习成果、服务器、http<br/>
 补充知识点：CSS 书写规范（bootstrap）baidu EFE team规范
 
  
