@@ -51,16 +51,6 @@ border-bottom-width
 # border简写,简写有利于CSS优化 #
 
 [slide]
-* 尺寸
-``` css
-min-height
-min-width
-max-height
-max-height
-```
-应用场景
-
-[slide]
 * 外边距、内边距
 ``` css
 margin
@@ -83,6 +73,15 @@ vertical-align
 visibility
 z-index
 ```
+[slide]
+* 尺寸
+``` css
+min-height
+min-width
+max-height
+max-height
+```
+应用场景
 
 [slide]
 * 颜色
@@ -92,6 +91,10 @@ z-index
 * <a href="http://www.w3school.com.cn/cssref/css_units.asp">单位 </a> 
 尺寸：px em mm cm
 颜色：rgb()的数字，百分比，#代码
+
+
+[slide]
+* CSS3
 
 [slide]
 * 边框
@@ -148,8 +151,7 @@ transition-delay
 @keyframes;
 animation
 animation-name    
-animation-duration 
-animation-timing-function    
+animation-duration   
 animation-delay    
 animation-iteration-count  
 animation-direction   
