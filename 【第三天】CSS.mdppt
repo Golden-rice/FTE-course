@@ -1,0 +1,208 @@
+title: 【第三天】CSS
+speaker: donggg
+url: donggg.farbox.com
+transition: move
+files: js/demo.js,css/demo.css,js/zoom.js
+
+[slide]
+# 第三天课程：CSS 
+## 复习
+## CSS2
+## CSS3
+
+[slide]
+## 复习
+* html注释 和 css注释 {:&.moveIn}
+* CSS 的优先级
+    * 嵌入式 > id > [属性] > .类 > 派生选择器 > 标签选择器 > *
+* CSS 选择器
+    * id引用，class引用，标签引用
+    * 后代选择器 子选择器
+    * 分组写法
+* CSS 样式
+    * background/ -color / -image / -repeat / -position / -attachment
+    * color / line-height / text-align
+    * font / -style / -weight / -size / - family
+* h5的布局标签
+```html
+<header><section><footer><aside><nav><audio><vedio><source>
+```
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#table">表格</a>
+``` css 
+border-spacing  /* 常用 */
+border-collapse /* 常用 */
+empty-cells
+caption-side
+```
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#border">边框轮廓</a>
+``` css
+border          /* 常用 */
+border-color
+border-style
+border-bottom   /* 常用 */
+border-bottom-color
+border-bottom-style
+border-bottom-width
+```
+# border简写,简写有利于CSS优化 #
+
+[slide]
+* 尺寸
+``` css
+min-height
+min-width
+max-height
+max-height
+```
+应用场景
+
+[slide]
+* 外边距、内边距
+``` css
+margin
+margin-top
+padding
+padding-top
+```
+>居中、负值使用
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#positioning">定位</a>
+``` css
+position
+display
+float
+left/right/top/bottom
+overflow
+cursor
+vertical-align
+visibility
+z-index
+```
+
+[slide]
+* 颜色
+颜色的标识方法，三种：
+#颜色代码/rgba（/rgb）/hsla（/hsl），例如：background-color:hsl(120%,65%,75%);
+
+* <a href="http://www.w3school.com.cn/cssref/css_units.asp">单位 </a> 
+尺寸：px em mm cm
+颜色：rgb()的数字，百分比，#代码
+
+[slide]
+* 边框
+``` css
+border-radius
+border-bottom-left-raduis
+border-image
+border-image-width
+box-shadow
+```
+>存在兼容性问题
+
+[slide]
+* 背景
+``` css
+background-clip
+background-size
+```
+> 存在兼容性问题
+
+[slide]
+* 文本效果
+``` css
+text-shadow
+```
+> 存在兼容性问题
+> 用absolute + margin 模拟 text-shadow
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#transform">2D/3D转换</a>
+``` css
+transform
+transform-origin
+perspectiove
+```
+
+<a href="http://www.htmleaf.com/css3/ui-design/201510202688.html">例子</a>
+<a href="http://www.css88.com/tool/css3Preview/Transform.html">感受变换</a>
+
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#transition">过渡</a>
+``` css
+transition
+transition-property
+transition-duration
+transition-time-function
+transition-delay
+```
+
+[slide]
+* 动画
+``` css
+@keyframes;
+animation
+animation-name    
+animation-duration 
+animation-timing-function    
+animation-delay    
+animation-iteration-count  
+animation-direction   
+animation-play-state
+```
+
+[slide]
+* 透明
+``` css
+opacity  /* IE9+ Chorme FF */
+filter: alpha(opacity = 50)  /*  IE8 IE7 */
+/* 以上包括边框全部透明 */
+rgba() 
+/* 支持只透明盒模型内容，不透明边框 */
+```
+
+[slide]
+* CSS3 选择器 （部分）
+```css
+a[src^="https"]选择其 src 属性值以 "https" 开头的每个 <a> 元素。
+a[src$=".pdf"] 选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。
+a[src*="abc"]  选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。
+p:only-child   选择属于其父元素的唯一子元素的每个 <p> 元素。
+p:nth-child(2) 选择属于其父元素的第二个子元素的每个 <p> 元素。
+::selection    选择被用户选取的元素部分。
+```
+
+[slide]
+* 模糊
+``` css
+filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */   
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px); /* FF */
+        -ms-filter: blur(10px);  
+            filter: blur(10px); 
+```
+
+[slide]
+* 渐变
+```css
+background: #000;
+background: -webkit-linear-gradient(#8fa1ff, #3757fa); /* Chrome  */
+background: -moz-linear-gradient(#8fa1ff, #3757fa); /* FF */
+background: -o-linear-gradient(top, #8fa1ff , #3757fa ); /* opera*/
+background: linear-gradient(#8fa1ff, #3757fa); /* Firefox  Safari 4+, Chrome */
+filter: alpha(opacity=100 finishopacity=50 style=1 startx=0, starty=0, finishx=0, finishy=150)  progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0); /* IE7+ */
+``` 
+
+[slide]
+<a href="http://www.zhangxinxu.com/wordpress/?p=699">易拉罐练习</a>
+布局练习
+
+[slide]
+![前端知识框架](aa.png "前端")
+<a hre="https://developer.mozilla.org/zh-CN/docs/Web">前端知识框架</a>
