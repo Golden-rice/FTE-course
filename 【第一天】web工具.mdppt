@@ -1,0 +1,195 @@
+title: 【第一天】web工具
+speaker: donggg
+url: donggg.farbox.com
+transition: move
+files: js/demo.js,css/demo.css,js/zoom.js
+
+[slide]
+# 第一天课程：与web前端的初恋
+## web这行
+## 工具
+## html
+
+[slide]
+## web？
+* 万维网(WWW,world wide web) {:&.moveIn} 
+* 何为网站?
+    * 网页构成 
+    * 服务器、浏览器
+* 土鳖的web 1.0；高大上的web 2.0 
+
+[slide]
+* web技术 {:&.moveIn} 
+    * 客户端：各大浏览器
+      超文本标记语言：HTML
+      层叠样式表：CSS
+      客户端脚本编程语言：Javascript
+      服务器操作系统：Linux/Unix/windows
+      Web服务器：Apache/Nginx/Tomcat/IIS
+      服务器编程语言：PHP/JSP/ASP
+      数据库管理系统：MySQL/Oracle/SQL Server
+
+* 前端发展
+    * 前端分为：前端重构、前端开发
+    * 浏览器端作为工作重心
+    * 课程：主要讲解html+css 、了解js 、Jquery入门
+
+[slide]
+## 前端知识讲解
+### 前端三宝：html css javascript
+* 大宝：html(网页骨架) {:&.moveIn}
+    * 超文本标记语言，后缀为.html .htm
+    * 标记浏览器显示的各个部分
+    * 标签结构 和 网页结构 
+    * 其他：html5
+    * 特殊标记书写：http://www.w3school.com.cn/tags/html_ref_entities.html
+
+[slide]
+* 二宝：css(化妆包)
+    * 层叠样式表
+    * css 1/2/3
+
+[slide]
+* 三宝：javascript(工具箱)
+    * 客户端脚本编程语言
+    * Netscape - livescript / IE - Jscript / w3c - ECMAscript
+    * 跨平台
+
+
+[slide]
+## 工具介绍
+* 必要的工具 {:&.moveIn}
+    * 操作系统: win7 /mac os x 
+    * 编辑器：sublime text 2
+    * 浏览器：Chrome
+    * 图像处理软件：Photoshop（再也不用美图秀秀了:P）
+
+[slide]
+## emmet/ z-coding
+* 详细使用：http://www.jianshu.com/p/5e099ebaa26a
+    * 生成标签、生成框架
+    * 嵌套规则，包含五种常用规则，分别为子级（>）、同级（+）、提升层级（^）、重复输出（*）、组输出（()）
+    * 属性规则，包含四种常用规则，分别为基本属性（# & .）、自定义属性（[]）、属性自增($)、文字属性（{}）
+    * 默认规则，当指明父标签时，符合默认规则的子标签可不必写出具体标签名
+        * li for ul, ol 
+        * tr for table, tbody, head, tfoot
+        * td for tr
+        * option for select, optgroup
+    * css缩写,如w10/p10/m5-5/c#ccc;
+    * 备注
+
+[slide]
+## 浏览器
+* Chrome {:&.moveIn}
+    * 查看控制台 F12(win7)/ cammand + alt +j(mac)
+    * 查看源代码
+* 浏览器内核：http://tongji.baidu.com/data/browser
+    * Chrome: webkit / IE: Trident / FF: Gecko / safari: webkit
+* 中文浏览器
+    * 极速模式、兼容模式
+
+[slide]
+## Photoshop
+* .psd / .jpg(.jpeg / .jpe) / .png / .gif 
+
+[slide]
+## 初识html
+* &lt;!DOCTYPE html&gt; http://www.w3school.com.cn/tags/tag_doctype.asp {:&.moveIn}
+* &lt;html&gt;
+* &lt;head&gt; 所有头部元素的容器: 标题、元信息、关键字、引用
+* &lt;body&gt;
+* &lt;title&gt;
+* &lt;meta&gt; http://www.w3school.com.cn/tags/tag_meta.asp
+
+
+[slide]
+## 结构标签及相关标签
+* &lt;!DOCTYPE html&gt; http://www.w3school.com.cn/tags/tag_doctype.asp {:&.moveIn}
+* &lt;html&gt;&lt;body&gt;&lt;head&gt;&lt;meta&gt;&lt;title&gt;
+* &lt;script&gt;&lt;link&gt;&lt;style&gt;&lt;base&gt;
+
+[slide]
+# 框架标签
+&lt;frame&gt;&lt;frameset&gt;&lt;noframes&gt;&lt;iframe&gt;
+> cols; rows; frameborder; scrolling; src; noresize;
+
+http://www.w3school.com.cn/tags/tag_frame.asp 
+
+```html
+<frameset cols="50%,50%" rows="50%,50%" frameborder="0">
+    <frame src="aa.html">第一个框架
+    <frame src="bb.html">第二个框架
+    <frame src="cc.html">第三个框架
+    <frame src="dd.html">第四个框架
+    <noframes>
+         <body>您的浏览器无法处理框架！</body>
+    </noframes>
+</frameset>
+
+```
+```html
+<iframe src="*.jpg"></iframe>
+```
+
+[slide]
+# 表格标签
+&lt;table&gt;&lt;tbody&gt;&lt;thead&gt;&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;&lt;th&gt;&lt;caption&gt;
+
+> border; cellpadding; cellspacing; width;
+
+http://www.w3school.com.cn/tags/tag_table.asp
+
+```html
+    <table border="1">
+        <caption>标题</caption>
+        <thead>
+            <th>
+                <td>项目一</td>
+                <td>项目二</td>
+                <td>项目三</td>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>内容一</td>
+                <td colspan="2">内容二</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>底部内容一</td>
+                <td>底部内容二</td>
+                <td>底部内容三</td>
+            </tr>
+        </tfoot>
+    </table>
+```
+
+[slide]
+# 内容标签
+&lt;h1&gt;~&lt;h6&gt;&lt;p&gt;&lt;pre&gt;&lt;q&gt;&lt;del&gt;&lt;ins&gt;&lt;address&gt;
+
+# 布局标签
+&lt;div&gt;&lt;span&gt;
+
+# 字体样式标签
+&lt;font&gt;&lt;small&gt;&lt;i&gt;&lt;strong&gt;&lt;em&gt;&lt;b&gt;&lt;cite&gt;&lt;sup&gt;&lt;sub&gt;
+
+[slide]
+# 列表标签
+&lt;ul&gt;&lt;ol&gt;&lt;li&gt;&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;
+
+# 布局标签
+&lt;div&gt;&lt;span&gt;
+
+# 媒体标签
+&lt;map&gt;&lt;area&gt; 
+
+http://www.w3school.com.cn/tags/tag_map.asp
+&lt;img&gt; 图片格式
+
+[slide]
+# 表单标签
+&lt;button&gt;&lt;select&gt;&lt;option&gt;&lt;textarea&gt;&lt;label&gt;
+&lt;form&gt;http://www.w3school.com.cn/tags/tag_form.asp
+&lt;input&gt;http://www.w3school.com.cn/tags/tag_input.asp
