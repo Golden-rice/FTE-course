@@ -1,0 +1,185 @@
+title: 【第四天】CSS高级教程
+speaker: donggg
+url: donggg.farbox.com
+transition: move
+files: js/demo.js,css/demo.css,js/zoom.js
+
+[slide]
+# 第四天课程：CSS 高级教程
+## 作业
+## 复习
+## CSS3（2）
+## PhotoShop
+## CSS兼容
+
+[slide]
+## 作业
+
+[slide]
+## 复习
+* 边框 border
+* 尺寸 min-height/max-height
+* 内外边距 padding margin(居中、简写)
+* 绝对定位、相对定位、固定定位
+* 行内元素、块级元素
+* 浮动
+* vertical-align/visibility/z-index
+* 颜色 rgba()
+* CSS3: border-radius/box-shadow/background-size
+
+>float 包裹、自动换行
+>margin 双边距
+
+[slide]
+PS
+* 图片处理：抠图、图片处理
+* 切图
+* 前端参数配对
+
+[slide]
+# <a href="http://www.eexiang.cn">项目实战一（布局）</a>
+* 沟通(PSD文件)
+* 想到用什么标签：ul+li/div/span/img等
+* 开始布局：DIV+CSS
+
+
+[slide]
+# CSS3 (2)
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#transform">2D/3D转换</a>
+``` css
+transform
+transform-origin
+perspectiove
+```
+
+<a href="http://www.htmleaf.com/css3/ui-design/201510202688.html">例子</a>
+<a href="http://www.css88.com/tool/css3Preview/Transform.html">感受变换</a>
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#transition">过渡</a>
+``` css
+transition
+transition-property
+transition-duration
+transition-time-function
+transition-delay
+```
+
+[slide]
+* 文本效果
+``` css
+text-shadow
+```
+> 存在兼容性问题
+> 用absolute + margin 模拟 text-shadow
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#animation">动画</a>
+``` css
+@keyframes;
+animation
+animation-name    
+animation-duration 
+animation-timing-function    
+animation-delay
+animation-iteration-count   
+```
+
+[slide]
+# 兼容问题
+* IE6 不支持 inline-block/fixed/min-height
+* IE8 以下包括IE8 不支持CSS3的属性，各个浏览器对CSS3的支持都不一样
+* IE6的双外边距
+
+[slide]
+# 兼容方法
+* Hack前缀
+* 条件注释
+
+[slide]
+# Hack前缀
+```CSS
+.a{
+     color: red;
+     _color: #ccc; /* IE6 */
+     *color: blue;  /* IE6+ */
+     #color: red;   /* IE6+ */
+     font-weight: bold  !important; /* 除了IE6 ，优先级最高 */
+}
+```
+
+[slide]
+# Hack前缀
+```CSS
+* html #a1 { color: #666; } /* IE6 */
+*+html #a1 { color: #999; } /* IE7 */
+
+```
+
+[slide]
+# CSS3前缀兼容
+```css
+/* 针对非IE浏览器*/
+-webkit- chrome      兼容
+-moz-    火狐(FF)    兼容
+-o-      欧朋(opera) 兼容
+-ms-     IE9         兼容
+
+/* IE9一下，用PIE.htc */
+
+```
+
+[slide]
+# 条件注释
+```html
+只在IE下生效        <!--[if IE]>      ... <![endif]-->
+只在IE9下生效       <!--[if IE 9]>    ... <![endif]-->
+在IE9以下（包括IE9）<!--[if lt IE 9]> ... <![endif]-->
+在IE6以上（包括IE6）<!--[if gte IE 6]>... <![endif]-->
+非IE浏览器          <!--[if !IE]>     ... <![endif]-->
+```
+
+[slide]
+# 滤镜
+
+
+[slide]
+* 透明
+``` css
+opacity  /* IE9+ Chorme FF */
+filter: alpha(opacity = 50)  /* IE8 IE7 */
+/* 以上包括边框全部透明 */
+rgba() 
+/* 支持只透明盒模型内容，不透明边框 */
+```
+
+[slide]
+* 模糊
+``` css
+filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */   
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px); /* FF */
+        -ms-filter: blur(10px);  
+            filter: blur(10px); 
+```
+
+[slide]
+* 渐变
+```css
+background: #000;
+background: -webkit-linear-gradient(#8fa1ff, #3757fa); /* Chrome  */
+background: -moz-linear-gradient(#8fa1ff, #3757fa); /* FF */
+background: -o-linear-gradient(top, #8fa1ff , #3757fa ); /* opera*/
+background: linear-gradient(#8fa1ff, #3757fa); /* Firefox  Safari 4+, Chrome */
+filter: alpha(opacity=100 finishopacity=50 style=1 startx=0, starty=0, finishx=0, finishy=150)  progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0); /* IE7+ */
+``` 
+
+[slide]
+<a href="http://www.zhangxinxu.com/wordpress/?p=699">易拉罐练习</a>
+布局练习
+
+[slide]
+<a hre="http://zoomzhao.github.io/code-guide/ ">前端代码规范</a>
