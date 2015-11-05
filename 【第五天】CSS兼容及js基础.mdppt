@@ -1,0 +1,168 @@
+title: 【第五天】CSS兼容及js基础
+speaker: donggg
+url: donggg.farbox.com
+transition: move
+files: js/demo.js,css/demo.css,js/zoom.js
+
+[slide]
+# 第五天课程：CSS兼容及js基础
+## 作业
+## 复习
+## CSS3（2）
+## CSS兼容
+## JS基础
+
+[slide]
+## 作业
+
+[slide]
+## 复习
+* PS 切片工具
+* PS 尺寸
+
+[slide]
+# CSS3 (2)
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#transform">2D/3D转换</a>
+``` css
+transform
+transform-origin
+perspectiove
+```
+
+<a href="http://www.htmleaf.com/css3/ui-design/201510202688.html">例子</a>
+<a href="http://www.css88.com/tool/css3Preview/Transform.html">感受变换</a>
+
+[slide]
+* <a href="http://www.w3school.com.cn/cssref/index.asp#transition">过渡</a>
+``` css
+transition
+transition-property
+transition-duration
+transition-time-function
+transition-delay
+```
+
+[slide]
+# CSS上的一些现象
+* 外边距重合
+* 高度塌陷
+    * 常规文档流中，当上下两个存在margin时，取最大的；当存在负值时，则用最大的减去负值的绝对值。
+    * 浮动中，上下两元素margin不重合
+
+[slide]
+# 兼容方法
+* Hack前缀
+* 条件注释
+
+[slide]
+# Hack前缀
+```CSS
+.a{
+     color: red;
+     _color: #ccc;  /* IE6  */
+     *color: blue;  /* IE6+ */
+     #color: red;   /* IE6+ */
+     font-weight: bold  !important; /* 除了IE6 ，优先级最高 */
+}
+```
+
+[slide]
+# Hack前缀
+```CSS
+* html #a1 { color: #666; } /* IE6 */
+*+html #a1 { color: #999; } /* IE7 */
+
+```
+
+[slide]
+# CSS3前缀兼容
+```css
+/* 针对非IE浏览器*/
+-webkit- chrome      兼容
+-moz-    火狐(FF)    兼容
+-o-      欧朋(opera) 兼容
+-ms-     IE9         兼容
+
+/* IE9一下，用PIE.htc */
+
+```
+
+[slide]
+# 条件注释
+```html
+只在IE下生效        <!--[if IE]>      ... <![endif]-->
+只在IE9下生效       <!--[if IE 9]>    ... <![endif]-->
+在IE9以下（包括IE9）<!--[if lt IE 9]> ... <![endif]-->
+在IE6以上（包括IE6）<!--[if gte IE 6]>... <![endif]-->
+非IE浏览器          <!--[if !IE]>     ... <![endif]-->
+```
+
+[slide]
+# Javascript 基础
+* js文件书写位置
+* 分号分割
+* ID或标签引用
+* 顺序执行
+* 注释
+
+[slide]
+* 变量 
+    * 字母开头
+    * 大小写敏感
+    * 一条语简写
+* 数据类型
+    * 基本类型：字符型，数值型，布尔型；
+    * 引用类型：数组，函数，对象；
+    * 特殊类型：undifined，null
+* 事件触发
+    * 标签内触发
+    * js内触发
+
+
+[slide]
+* 函数
+```javascript
+function functionname(argument)
+{
+这里是要执行的代码
+}
+```
+
+[slide]
+* 运算符
+\+ - \* / % = += ++ 
+
+* 比较
+\>、<、 >=、 <=、==、===、！=
+* 判断 && || ！
+
+* if else 、while、for、switch
+
+
+[slide]
+# JS实例
+```javascript
+x=document.getElementById("demo")  //查找元素
+x.innerHTML="Hello JavaScript";    //改变内容
+x.style.color="#ff0000"; //改变样式
+```
+
+[slide]
+# 兼容实例列举
+* min-height IE6下兼容
+* display:inline-block IE6下兼容
+* position:fixed IE6下兼容
+* IE6下双边距
+* CSS3 非IE浏览器兼容，及IE8一下兼容
+```css
+_position: absolute;
+_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);
+```
+
+
+
+
+[slide]
+<a hre="http://zoomzhao.github.io/code-guide/ ">前端代码规范</a>
