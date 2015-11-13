@@ -1,0 +1,153 @@
+title: 【第六天】jQuery基础和实战练习
+speaker: donggg
+url: donggg.farbox.com
+transition: move
+files: js/demo.js,css/demo.css,js/zoom.js
+
+[slide]
+# 第六天课程：jQuery基础和实战练习
+## 作业
+## 复习
+## jQuery基础
+
+[slide]
+# 复习
+## transform
+## transition
+## 几个兼容方法
+## javasript基础
+
+[slide]
+# <a href="http://www.css88.com/tool/css3Preview/Transform.html">transform</a>
+# <a href="http://www.w3school.com.cn/cssref/index.asp#transition">transition</a>
+
+
+[slide]
+* 高度塌陷：overflow:hidden/clear:both;
+* 双边距
+
+
+[slide]
+# Hack前缀
+```CSS
+.a{
+     color: red;
+     _color: #ccc;  /* IE6 */
+     *color: blue;  /* IE6 7 */
+     #color: red;   /* IE6 7 */
+     font-weight: bold  !important; /* 除了IE6 ，优先级最高 */
+}
+```
+
+[slide]
+# Hack前缀
+```CSS
+* html #a1 { color: #666; } /* IE6 */
+*+html #a1 { color: #999; } /* IE7 */
+
+```
+
+[slide]
+# CSS3前缀兼容
+```css
+/* 针对非IE浏览器*/
+-webkit- chrome      兼容
+-moz-    火狐(FF)    兼容
+-o-      欧朋(opera) 兼容
+-ms-     IE9         兼容
+
+/* IE9一下，用PIE.htc */
+
+```
+
+[slide]
+# 条件注释
+```html
+只在IE下生效        <!--[if IE]>      ... <![endif]-->
+只在IE9下生效       <!--[if IE 9]>    ... <![endif]-->
+在IE9以下（包括IE9）<!--[if lt IE 9]> ... <![endif]-->
+在IE6以上（包括IE6）<!--[if gte IE 6]>... <![endif]-->
+非IE浏览器          <!--[if !IE]>     ... <![endif]-->
+```
+
+[slide]
+# Javascript 基础
+* js文件书写位置
+* 分号分割
+* ID或标签引用
+* 顺序执行
+* 注释
+
+[slide]
+* 变量 
+    * 字母开头
+    * 大小写敏感
+    * 一条语简写
+* 数据类型
+    * 基本类型：字符型，数值型，布尔型；
+    * 引用类型：数组，函数，对象；
+    * 特殊类型：undifined，null
+* 事件触发
+    * 标签内触发
+    * js内触发
+
+
+[slide]
+* 函数
+```javascript
+function functionname(argument)
+{
+这里是要执行的代码
+}
+```
+
+[slide]
+* 运算符
+\+ - \* / % = += ++ 
+
+* 比较
+\>、<、 >=、 <=、==、===、！=
+* 判断 && || ！
+
+* if else 、while、for、switch
+
+
+[slide]
+# JS实例
+```javascript
+x=document.getElementById("demo")  //查找元素
+x.innerHTML="Hello JavaScript";    //改变内容
+x.style.color="#ff0000"; //改变样式
+```
+
+[slide]
+# jQuery基础
+* 步奏：
+    a. 加载jQuery库：引用本地文件，引用网络文件
+    b. 编写js
+
+* $(document).ready(function(){ some code... }) = $(function( ... ){ some code... })
+
+* 语法：$选择器.事件()/属性
+* 选择器：类似于CSS 类选择器. 、ID选择器 #、标签选择器 tagname，分组，后代，$(this)指代当前DOM
+* 筛选：siblings(),find(),
+* 事件：click，focus，hover,mouseover
+* 设置CSS：.css()
+* 效果：hide()，show(), fade(), taggle(), slideUp()
+* 尺寸：height(), innerHeight(), outerHeight()
+
+<a href="http://www.php100.com/manual/jquery/">参考手册</a>
+
+[slide]
+# jQuery 练习
+* tab导航
+* 轮播
+
+
+[slide]
+<a href="http://www.cnblogs.com/">布局练习一：博客园首页</a>
+<a href="http://www.cnblogs.com/dongcheck/">布局练习二：博客</a>
+
+
+[slide]
+<a hre="http://zoomzhao.github.io/code-guide/ ">前端代码规范</a>
