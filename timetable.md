@@ -3,7 +3,7 @@
 
 【工具篇】编辑器/浏览器/调试/PS/github/runjs
 
-【内容篇】HTML/CSS/初识JS/jQuery/响应式/jQuery Mobie/CSS3/HTML5/Bootstrap
+【内容篇】HTML/CSS/初识JS/jQuery/响应式/jQuery Mobie/CSS3/HTML5
 
  [TOC]
 
